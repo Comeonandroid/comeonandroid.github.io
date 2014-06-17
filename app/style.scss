@@ -1,0 +1,245 @@
+@font-face {
+  font-family: Dat Font;
+  font-style: normal;
+  src: url("font/HelveticaNeueCyr-Bold.otf") format("truetype"); }
+
+@font-face {
+  font-family: Fonti Sans;
+  font-style: normal;
+  src: url("font/fontinsans_cyrillic_r_46b.ttf") format("truetype"); }
+
+
+body {
+  background-color: #000;
+  font-size: 16pt;
+  font-family: 'Dat Font';
+  color: #fff;
+  background: url("/img/Bullshit.png");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+ul{
+  li{
+    list-style-type: none;
+  }
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #a3a3a3;
+  padding-bottom: 1px;
+}
+
+.clearfix {
+  width: 100%;
+  clear: both;
+}
+
+.many_header {
+  text-align: center;
+  margin-top: 3.25%;
+  margin-bottom: 2.60%;
+}
+
+.a_lot_of_nav_container {
+  font-size: 75%;
+  padding: 0 2%;
+  margin-bottom: 3.50%;
+}
+
+.much_sub_header {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.so_about {
+  width: 30%;
+  float: left;
+}
+
+.very_date {
+  float: right;
+  width: 20%;
+  text-align: right;
+}
+
+.date:after {
+  @extend .clearfix;
+}
+.wow_wrapper{
+  position: relative;
+  transition:All 0.7s ease;
+  -webkit-transition:All 0.7s ease;
+  -moz-transition:All 0.7s ease;
+  -o-transition:All 0.7s ease;
+  z-index: 2;
+  left: 0px;
+}
+.wow_wrapper.search{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wow_wrapper.about{
+  overflow-x: hidden;
+  left:-320px;
+  top:0;
+  bottom: 0;
+  position: fixed;
+  width: 320px;
+  background-color: #fff;
+  .separator{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 20px;
+    background: url('/img/jorik.png') repeat-y right top;
+    right: -13px;
+  }
+}
+.about_header{
+  color: #000;
+  font-size: 100%;
+  text-align: center;
+  padding: 23% 0;
+}
+.about_message{
+  padding: 0 12%;
+  font-family: "Fonti Sans";
+  font-size: 10pt;
+  color: #000;
+  text-align: center;
+  line-height: 18px;
+  a{
+    font-size: 10pt;
+    color: #000;
+  }
+}
+.very_bullshit_container {
+  padding: 0 7.5%;
+  text-align: center;
+}
+.much_about_footer{
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  .so_cross{
+   background: url('/img/cross-black.png') no-repeat;
+   margin: 50px auto 0px auto;
+  }
+}
+.place_list{
+  color: #000;
+  .place_list_header{
+    color: #a3a3a3;
+    text-transform: uppercase;
+    font-family: 'Helvetica Neue';
+    font-size: 9pt;
+  }
+  ul{
+    padding: 0;
+    li{
+      margin-bottom: 10px;
+    }
+  }
+  a{
+    color: #000;
+    font-family: 'Helvetica Neue';
+    text-transform: uppercase;
+    font-size: 11pt;
+  }
+}
+.bullshit {
+}
+
+.such_bullshit_message {
+  padding-top: 3%;
+  text-transform: uppercase;
+  padding-bottom: 0.60%;
+  font-size: 125%;
+  line-height: 47px;
+}
+
+.many_footer {
+  font-size: 62.5%;
+  color: #595959;
+  font-family: "Fonti Sans";
+}
+
+.so_search_container {
+  padding-top: 6.7%;
+  padding-bottom: 3.7%;
+  text-align: center;
+
+  .so_cross{
+    margin: 0 auto;
+  }
+  .many_header{
+    margin: 3.5% auto;
+    text-align: center;
+    font-size: 125%;
+  }
+  .very_search_input{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 562%;
+    color: #fff;
+    background-color: transparent;
+    outline-style: none;
+    border: 0px solid #fff;
+    width: 100%;
+    height: 141px;
+  }
+}
+.many_search_input{
+  margin: 0 auto;
+  border:0px solid #000;
+  color: #fff;
+  padding-bottom: 10px;
+  margin-bottom: 3.5%;
+
+}
+
+.many_about_container{
+  width: 25%;
+}
+
+
+
+
+.so_cross{
+  border: 0px solid #000;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url('/img/cross.png') no-repeat left top;
+  cursor: pointer;
+}
+.amazing_button{
+  margin-top: 3.5%;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 75%;
+  padding: 20px 0px;
+  cursor: pointer;
+  width: 300px;
+  margin: 0 auto;
+}
+.so_sorry{
+  font-family: "Fonti Sans";
+  font-size: 65%;
+  color: #fff;
+  line-height: 32px;
+}
+.wow_show_about{
+  transition:All 0.4s ease;
+  -webkit-transition:All 0.4s ease;
+  -moz-transition:All 0.4s ease;
+  -o-transition:All 0.4s ease;
+}
