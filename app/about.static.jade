@@ -2,8 +2,6 @@ doctype html
 head
   meta(name="viewport" content="width=device-width")
 
-  title Bullshit Board
-
   link(rel="stylesheet" href="stylesheets/app.css")
 
   script(src="javascripts/vendor.js")
@@ -38,16 +36,16 @@ body
                 a(href='#') коворкинг MEsto
               li
                 a(href='#') Irene & Mary
-          .so_cross.wow_hide_about
+          .so_cross
         .separator
       .wow_wrapper.main
         .many_header
           | Bullshit board
         .a_lot_of_nav_container
           .so_about
-            a.wow_show_about(href='#') О проекте
+            a(href='#') О проекте
           .much_sub_header
-            a.wow_show_search(href='#') Найти / Добавить булшит
+            a(href='#') Найти / Добавить булшит
           .very_date 09.06.14 / 20:38
         .many_about_container
         .very_bullshit_container
@@ -95,16 +93,3 @@ body
               | and created this fresh summer collection.
               a(href='#') hoboandsailor.com
             .many_footer [ 10 июня 2014 / 12:43 ] рассказать об этом: Вконтакте / Фейсбук / Твиттер
-      .wow_wrapper.search
-        .so_search_container
-          a.so_cross.wow_hide_search(href='#')
-          .many_header ПОИСК БУЛШИТА
-          textarea.very_search_input
-        .very_bullshit_container
-          .so_sorry
-            | Извини, ничего похожего.
-            br
-            | Сформулируй хорошенько что ищешь и жми:
-        .amazing_button(style='margin-top: 3.5%;') опубликовать булшит
-
-

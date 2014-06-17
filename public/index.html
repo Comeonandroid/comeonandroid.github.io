@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta name="viewport" content="width=device-width">
+  <title>Bullshit Board</title>
   <link rel="stylesheet" href="stylesheets/app.css">
   <script src="javascripts/vendor.js"></script>
   <script src="javascripts/app.js"></script>
@@ -29,14 +30,14 @@
           <li><a href="#">Irene & Mary</a></li>
         </ul>
       </div>
-      <div class="so_cross"></div>
+      <div class="so_cross wow_hide_about"></div>
     </div>
     <div class="separator"></div>
     <div class="wow_wrapper main">
       <div class="many_header">Bullshit board</div>
       <div class="a_lot_of_nav_container">
-        <div class="so_about"><a href="#">О проекте</a></div>
-        <div class="much_sub_header"><a href="#">Найти / Добавить булшит</a></div>
+        <div class="so_about"><a href="#" class="wow_show_about">О проекте</a></div>
+        <div class="much_sub_header"><a href="#" class="wow_show_search">Найти / Добавить булшит</a></div>
         <div class="very_date">09.06.14 / 20:38</div>
       </div>
       <div class="many_about_container"></div>
@@ -86,6 +87,16 @@
           <div class="many_footer">[ 10 июня 2014 / 12:43 ] рассказать об этом: Вконтакте / Фейсбук / Твиттер</div>
         </div>
       </div>
+    </div>
+    <div class="wow_wrapper search">
+      <div class="so_search_container"><a href="#" class="so_cross wow_hide_search"></a>
+        <div class="many_header">ПОИСК БУЛШИТА</div>
+        <textarea class="very_search_input"></textarea>
+      </div>
+      <div class="very_bullshit_container">
+        <div class="so_sorry">Извини, ничего похожего.<br>Сформулируй хорошенько что ищешь и жми:</div>
+      </div>
+      <div style="margin-top: 3.5%;" class="amazing_button">опубликовать булшит</div>
     </div>
   </div>
 </body>
