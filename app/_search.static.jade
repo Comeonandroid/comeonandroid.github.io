@@ -1,0 +1,24 @@
+doctype html
+head
+  meta(name="viewport" content="width=device-width")
+
+  link(rel="stylesheet" href="stylesheets/app.css")
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+  script.
+    require('initialize');
+
+body
+  .wow_wrapper.search
+      .so_search_container
+          a.so_cross(href='#')
+          .many_header ПОИСК БУЛШИТА
+          textarea.very_search_input
+        .very_bullshit_container
+          .so_sorry
+            | Извини, ничего похожего.
+            br
+            | Сформулируй хорошенько что ищешь и жми:
+        .amazing_button(style='margin-top: 3.5%;') опубликовать булшит

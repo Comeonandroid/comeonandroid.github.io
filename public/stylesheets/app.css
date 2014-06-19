@@ -105,7 +105,7 @@ a {
     font-size: 10pt;
     color: #000; }
 
-.very_bullshit_container {
+.very_bullshit_container, .very_bullshit_search_container {
   padding: 0 7.5%;
   text-align: center; }
 
@@ -199,6 +199,7 @@ a {
   margin: 0 auto; }
 
 .so_sorry {
+  display: none;
   font-family: "Fonti Sans";
   font-size: 65%;
   color: #fff;

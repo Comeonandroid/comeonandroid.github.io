@@ -91,6 +91,8 @@
   globals.require.brunch = true;
 })();
 require.register("initialize", function(exports, require, module) {
+var getAndShowBullshits, monthText, pageId;
+
 $('body').on('keyup', '.very_search_input', function() {
   return $(this).height($(this).height() + $(this).scrollTop());
 });
@@ -120,7 +122,7 @@ $('body').on('click', '.wow_show_search', function(e) {
   $('.wow_wrapper.search').fadeIn(600);
   $('.wow_wrapper.main').fadeOut(500);
   $('.wow_wrapper.main div').fadeOut(500);
-  $('.wow_wrapper.search div').fadeIn(600);
+  $('.wow_wrapper.search div[class!=so_sorry]]').fadeIn(600);
   return $('textarea').focus();
 });
 
@@ -131,6 +133,52 @@ $('body').on('click', '.wow_hide_search', function(e) {
   $('.wow_wrapper.main div').fadeIn(600);
   return $('.wow_wrapper.search div').fadeOut(600);
 });
+
+$('body').on('click', '.wow_publish', function(e) {
+  var input;
+  e.preventDefault();
+  input = $(this).parent().find('.very_search_input');
+  return $.post('/bullshit', {
+    text: input.val()
+  }, function(data) {
+    var pageId;
+    if (data.status === 'success') {
+      $('.very_bullshit_container').html('');
+      pageId = 0;
+      getAndShowBullshits(pageId);
+      input.val('');
+      $('.wow_wrapper.search').fadeOut(600);
+      $('.wow_wrapper.main').fadeIn(600);
+      $('.wow_wrapper.main div').fadeIn(600);
+      return $('.wow_wrapper.search div').fadeOut(600);
+    }
+  });
+});
+
+pageId = 0;
+
+monthText = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+
+getAndShowBullshits = function(pageId) {
+  return $.get("/bullshits/" + pageId, function(data) {
+    var date, dateFormat, day, hours, key, minutes, month, value, year, _results;
+    _results = [];
+    for (key in data) {
+      value = data[key];
+      date = new Date(value.date);
+      year = date.getFullYear();
+      month = monthText[date.getMonth()];
+      day = date.getDate();
+      hours = date.getHours();
+      minutes = date.getMinutes();
+      dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes;
+      _results.push($('.very_bullshit_container').append("<div class='bullshit'><div class='such_bullshit_message'>" + value.text + "</div><div class='many_footer'>[ " + dateFormat + " ] рассказать об этом: Вконтакте / Фейсбук / Твиттер</div></div>"));
+    }
+    return _results;
+  });
+};
+
+getAndShowBullshits(pageId);
 });
 
 ;
