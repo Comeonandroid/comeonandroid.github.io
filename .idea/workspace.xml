@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be13e468-0c79-4e9e-bc78-61033aa71ead" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/about.static.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/index.static.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/search.static.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/search.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/test_node.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/test.coffee" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/views/bullshit.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/app.css.map" afterPath="$PROJECT_DIR$/public/stylesheets/app.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/app.css" afterPath="$PROJECT_DIR$/public/stylesheets/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/app.js.map" afterPath="$PROJECT_DIR$/public/javascripts/app.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/app.js" afterPath="$PROJECT_DIR$/public/javascripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brunch-config.coffee" afterPath="$PROJECT_DIR$/brunch-config.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/api/index.coffee" afterPath="$PROJECT_DIR$/server/api/index.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.jade" afterPath="$PROJECT_DIR$/server/views/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/initialize.coffee" afterPath="$PROJECT_DIR$/app/initialize.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.coffee" afterPath="$PROJECT_DIR$/server/server.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/style.scss" afterPath="$PROJECT_DIR$/app/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/vendor.js.map" afterPath="$PROJECT_DIR$/public/javascripts/vendor.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/vendor.js" afterPath="$PROJECT_DIR$/public/javascripts/vendor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Bullshit.iws" />
@@ -43,10 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_index.static.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/_index.static.jade">
+      <file leaf-file-name="server.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/server.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="0" selection-start="0" selection-end="3998" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
+            <state line="3" column="38" selection-start="84" selection-end="84" vertical-scroll-proportion="0.055900622" vertical-offset="0" max-vertical-offset="805">
               <folding />
             </state>
           </provider>
@@ -55,16 +46,50 @@
       <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="29" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="317" max-vertical-offset="1122">
+            <state line="61" column="0" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initialize.coffee" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bullshit.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/views/bullshit.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="31" selection-start="426" selection-end="426" vertical-scroll-proportion="-4.3636365" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initialize.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/initialize.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="44" selection-start="717" selection-end="717" vertical-scroll-proportion="0.46605745" vertical-offset="0" max-vertical-offset="1258">
+            <state line="107" column="0" selection-start="3460" selection-end="3460" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="2100">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="192" column="0" selection-start="5672" selection-end="5672" vertical-scroll-proportion="0.0" vertical-offset="2433" max-vertical-offset="4035">
+              <folding>
+                <marker date="1403267750000" expanded="true" signature="3147:3241" placeholder="{...}" />
+                <marker date="1403267750000" expanded="true" signature="3867:4503" placeholder="{...}" />
+                <marker date="1403267750000" expanded="true" signature="4989:5092" placeholder="{&quot;left&quot;: '-320px'...}" />
+                <marker date="1403267750000" expanded="true" signature="6590:6956" placeholder="{...}" />
+                <marker date="1403267750000" expanded="true" signature="6827:6909" placeholder="{...}" />
+                <marker date="1403267750000" expanded="true" signature="6823:6875" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="12" selection-start="2227" selection-end="2227" vertical-scroll-proportion="-6.82" vertical-offset="1639" max-vertical-offset="3825">
               <folding />
             </state>
           </provider>
@@ -73,16 +98,7 @@
       <file leaf-file-name="bullshit.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/models/bullshit.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="25" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/api/index.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="55" selection-start="532" selection-end="532" vertical-scroll-proportion="-4.327273" vertical-offset="0" max-vertical-offset="629">
+            <state line="8" column="25" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
@@ -91,34 +107,7 @@
       <file leaf-file-name="brunch-config.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/brunch-config.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_search.static.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/_search.static.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="233" column="7" selection-start="3841" selection-end="3847" vertical-scroll-proportion="-8.784314" vertical-offset="3513" max-vertical-offset="4267">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="21" selection-start="862" selection-end="862" vertical-scroll-proportion="-22.833334" vertical-offset="30" max-vertical-offset="735">
+            <state line="17" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -127,7 +116,16 @@
       <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="305" selection-end="305" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="405">
+            <state line="21" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="459">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="21" selection-start="862" selection-end="862" vertical-scroll-proportion="-20.4" vertical-offset="0" max-vertical-offset="833">
               <folding />
             </state>
           </provider>
@@ -146,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/app.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/public/about.html" />
         <option value="$PROJECT_DIR$/public/search.html" />
@@ -167,17 +164,19 @@
         <option value="$PROJECT_DIR$/public/server/server.coffee" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server/mongoose.coffee" />
-        <option value="$PROJECT_DIR$/server/server.coffee" />
         <option value="$PROJECT_DIR$/server/test.jade" />
         <option value="$PROJECT_DIR$/app/index.static.jade" />
         <option value="$PROJECT_DIR$/server/app.coffee" />
         <option value="$PROJECT_DIR$/brunch-config.coffee" />
         <option value="$PROJECT_DIR$/server/libs/mongoose.coffee" />
         <option value="$PROJECT_DIR$/server/models/bullshit.coffee" />
+        <option value="$PROJECT_DIR$/server/views/bullshit.jade" />
+        <option value="$PROJECT_DIR$/public/javascripts/app.js" />
         <option value="$PROJECT_DIR$/server/api/index.coffee" />
-        <option value="$PROJECT_DIR$/server/views/index.jade" />
         <option value="$PROJECT_DIR$/app/style.scss" />
         <option value="$PROJECT_DIR$/app/initialize.coffee" />
+        <option value="$PROJECT_DIR$/server/views/index.jade" />
+        <option value="$PROJECT_DIR$/server/server.coffee" />
       </list>
     </option>
   </component>
@@ -330,6 +329,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bullshit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bullshit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -530,7 +547,9 @@
     <entry file="file://$PROJECT_DIR$/server/api/index.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="102" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="195">
-          <folding />
+          <folding>
+            <marker date="1403264915000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -615,54 +634,14 @@
         <state line="7" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="-16.11986" vertical-offset="13837" max-vertical-offset="14688" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="2414" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="12" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="21" selection-start="862" selection-end="862" vertical-scroll-proportion="-22.833334" vertical-offset="30" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="0.07453416" vertical-offset="0" max-vertical-offset="805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.2795031" vertical-offset="0" max-vertical-offset="805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="305" selection-end="305" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brunch-config.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/_index.static.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="0" selection-end="3998" vertical-scroll-proportion="0.0" vertical-offset="905" max-vertical-offset="1710">
+        <state line="105" column="0" selection-start="0" selection-end="3998" vertical-scroll-proportion="2.155797" vertical-offset="0" max-vertical-offset="1938">
           <folding />
         </state>
       </provider>
@@ -674,9 +653,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/libs/mongoose.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.111801244" vertical-offset="0" max-vertical-offset="805">
+        <state line="6" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brunch-config.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="21" selection-start="862" selection-end="862" vertical-scroll-proportion="-20.4" vertical-offset="0" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
@@ -688,30 +695,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/index.coffee">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="55" selection-start="532" selection-end="532" vertical-scroll-proportion="-4.327273" vertical-offset="0" max-vertical-offset="629">
-          <folding />
+        <state line="192" column="0" selection-start="5672" selection-end="5672" vertical-scroll-proportion="0.0" vertical-offset="2433" max-vertical-offset="4035">
+          <folding>
+            <marker date="1403267750000" expanded="true" signature="3147:3241" placeholder="{...}" />
+            <marker date="1403267750000" expanded="true" signature="3867:4503" placeholder="{...}" />
+            <marker date="1403267750000" expanded="true" signature="4989:5092" placeholder="{&quot;left&quot;: '-320px'...}" />
+            <marker date="1403267750000" expanded="true" signature="6590:6956" placeholder="{...}" />
+            <marker date="1403267750000" expanded="true" signature="6827:6909" placeholder="{...}" />
+            <marker date="1403267750000" expanded="true" signature="6823:6875" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="7" selection-start="3841" selection-end="3847" vertical-scroll-proportion="-8.784314" vertical-offset="3513" max-vertical-offset="4267">
+        <state line="132" column="12" selection-start="2227" selection-end="2227" vertical-scroll-proportion="-6.82" vertical-offset="1639" max-vertical-offset="3825">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/views/index.jade">
+    <entry file="file://$PROJECT_DIR$/server/api/index.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="29" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="317" max-vertical-offset="1122">
+        <state line="14" column="2" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
+          <folding>
+            <marker date="1403264915000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/bullshit.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="31" selection-start="426" selection-end="426" vertical-scroll-proportion="-4.3636365" vertical-offset="0" max-vertical-offset="375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/initialize.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="44" selection-start="717" selection-end="717" vertical-scroll-proportion="0.46605745" vertical-offset="0" max-vertical-offset="1258">
+        <state line="107" column="0" selection-start="3460" selection-end="3460" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="38" selection-start="84" selection-end="84" vertical-scroll-proportion="0.055900622" vertical-offset="0" max-vertical-offset="805">
           <folding />
         </state>
       </provider>

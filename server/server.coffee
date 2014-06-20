@@ -1,4 +1,4 @@
 app = require './app'
 
-app.listen '1377',()->
-  console.log('server running on :1377')
+app.listen '8080',()->
+  console.log('server running on :8080')
