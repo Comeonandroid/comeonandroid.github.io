@@ -34,8 +34,19 @@ app.get '/bullshit/:id', (req, res) ->
     res.render 'bullshit',{title:'Bullshit Board',bullshit: JSON.stringify bullshit}
 
 app.post '/bullshit', (req, res)->
+
+  str = req.body.text
+  reg =  /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_]*)/igm;
+  pregMatch = str.match(reg);
+
+  str = str.replace(reg, (s) ->
+    msg = if /:\/\//.exec(s) is null then "http://" + s else s
+    return "<a href=\"#{msg}\">#{s}</a>"
+  )
+
   bullshit = new BullshitModel({
-    text: req.body.text
+    text: str,
+    date: Date.now()
   })
   if req.cookies.banForHour isnt  'true'
     bullshit.save (err)->

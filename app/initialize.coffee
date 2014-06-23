@@ -1,4 +1,21 @@
 
+htmlEscapes = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#x27;',
+  '/': '&#x2F;'
+};
+
+htmlEscaper = /[&<>"'\/]/g
+
+_.escape = (string) ->
+  return ('' + string).replace(htmlEscaper, (match) ->
+    return htmlEscapes[match];
+)
+
+
 
 pageId = 0
 
@@ -20,12 +37,16 @@ showBullshits = (container,data) ->
     minutes = date.getMinutes()
 
     dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes
+    url = window.location.origin + "/bullshit/" + value._id
 
-    society = 'Вконтакте / Фейсбук / Твиттер'
+    society = "<a href=\"http://vkontakte.ru/share.php?url=#{url}&title=Bullshit Board\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=#{url}\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. #{_.escape(value.text)}&url=#{url}\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>"
+
     if getCookie('admin') is 'IDKFA'
       society += " / <span class='wow_del_bullshit' data-id='#{value._id}'>Участковому</span>"
 
-    container.append("<div class='bullshit'><div class='such_bullshit_message'>#{value.text}</div><div class='many_footer'>[ #{dateFormat} ] рассказать об этом: #{society}</div></div>")
+    rotate = Math.random() * (0.3 - (-0.3)) + -0.3
+
+    container.append("<div class='bullshit' style='transform: rotate(#{rotate}deg); -webkit-transform: rotate(#{rotate}deg);-moz-transform: rotate(#{rotate}deg);-o-transform: rotate(#{rotate}deg);-ms-transform: rotate(#{rotate}deg) ;'><div class='such_bullshit_message'>#{value.text}</div><div class='many_footer'>[ #{dateFormat} ] рассказать об этом: #{society}</div></div>")
 
 
 
@@ -45,7 +66,11 @@ $('body').on 'keyup','.very_search_input', ()->
         showBullshits($('.very_bullshit_search_container'),data)
         $('.so_sorry').hide()
       else
+        $('.very_bullshit_search_container').html('')
         $('.so_sorry').show()
+  else
+    $('.very_bullshit_search_container').html('')
+    $('.so_sorry').hide()
 
 $('body').on 'click','.wow_show_about', (e)->
   e.preventDefault();
@@ -66,6 +91,8 @@ $('body').on 'click','.wow_show_search', (e)->
   $('.wow_wrapper.main div').fadeOut(500)
   $(".wow_wrapper.search div[class != 'so_sorry']").fadeIn(600)
   $('textarea').focus()
+  $('.very_bullshit_search_container').html('')
+
 
 $('body').on 'click','.wow_hide_search', (e)->
   e.preventDefault();
@@ -76,9 +103,13 @@ $('body').on 'click','.wow_hide_search', (e)->
 
 $('body').on 'click','.wow_publish', (e)->
   e.preventDefault()
-  input = $(this).parent().find('.very_search_input')
 
-  $.post '/bullshit',{text: input.val()}, (data)->
+  input = $(this).parent().find('.very_search_input')
+  input.css 'text-transform', 'none'
+  text = input.val()
+  input.css 'text-transform', 'uppercase'
+
+  $.post '/bullshit',{text: text}, (data)->
     if data.status is 'success'
       $('.very_bullshit_container').html('')
       pageId = 0
@@ -103,8 +134,9 @@ $('body').on 'click','.wow_del_bullshit', (e)->
 
 $(document).scroll (e)->
   if $(window).height() + $(window).scrollTop() > $(document).height() - 300
+    pageId++
+    console.log pageId
     $.get "/bullshits/#{pageId}", (data)->
-      pageId++
       showBullshits($('.very_bullshit_container'),data)
 
 date    = new Date()
@@ -131,4 +163,10 @@ if bullshit?
 
   dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes
 
-  $('.very_bullshit_search_container').append("<div class='bullshit'><div class='such_bullshit_message'>#{value.text}</div><div class='many_footer'>[ #{dateFormat} ] рассказать об этом: Вконтакте / Фейсбук / Твиттер</div></div>")
+  url = window.location.origin + "/bullshit/" + value._id
+
+  society = "<a href=\"http://vkontakte.ru/share.php?url=#{url}&title=Bullshit Board\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=#{url}\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. #{_.escape(value.text)}&url=#{url}\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>"
+
+
+  $('.very_bullshit_search_container').append("<div class='bullshit'><div class='such_bullshit_message'>#{value.text}</div><div class='many_footer'>[ #{dateFormat} ] рассказать об этом: #{society}</div></div>")
+

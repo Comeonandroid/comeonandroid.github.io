@@ -1,12 +1,13 @@
 doctype html
 head
-    meta(name="viewport" content="width=device-width")
+    meta(name="viewport" content="width=device-width; initial-scale=1")
     title #{title}
     link(rel="stylesheet" href="/stylesheets/app.css")
     script(src="/javascripts/vendor.js")
     script(src="/javascripts/app.js")
 body
     .wow_wrapper.about
+        .so_cross.wow_hide_about
         .about_header
             | О ПРОЕКТЕ
             .about_message
@@ -31,7 +32,7 @@ body
                             a(href='#') коворкинг MEsto
                         li
                             a(href='#') Irene & Mary
-                .so_cross.wow_hide_about
+
             .separator
     .wow_wrapper.main
         .many_header
@@ -51,12 +52,13 @@ body
             .many_header ПОИСК БУЛШИТА
             textarea.very_search_input
         .very_bullshit_search_container
-            .so_sorry
-                | Извини, ничего похожего.
-                br
-                | Сформулируй хорошенько что ищешь и жми:
+        .so_sorry
+            | Извини, ничего похожего.
+            br
+            | Сформулируй хорошенько что ищешь и жми:
         .amazing_button.wow_publish(style='margin-top: 3.5%;') опубликовать булшит
-    .pluso(data-background='transparent', data-options='big,round,line,horizontal,counter,theme=04', data-services='vkontakte,facebook,twitter')
     script.
       require('initialize');
+
+
 

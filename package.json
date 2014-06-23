@@ -37,6 +37,7 @@
     "mongoose": "^3.8.12",
     "morgan": "^1.1.1",
     "path": "^0.4.9",
+    "sanitizer": "^0.1.1",
     "sass-brunch": "^1.8.1",
     "serve-favicon": "^2.0.1"
   }

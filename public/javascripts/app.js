@@ -91,7 +91,24 @@
   globals.require.brunch = true;
 })();
 require.register("initialize", function(exports, require, module) {
-var date, dateFormat, day, getCookie, hours, minutes, month, monthText, pageId, showBullshits, value, year;
+var date, dateFormat, day, getCookie, hours, htmlEscaper, htmlEscapes, minutes, month, monthText, pageId, showBullshits, society, url, value, year;
+
+htmlEscapes = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#x27;',
+  '/': '&#x2F;'
+};
+
+htmlEscaper = /[&<>"'\/]/g;
+
+_.escape = function(string) {
+  return ('' + string).replace(htmlEscaper, function(match) {
+    return htmlEscapes[match];
+  });
+};
 
 pageId = 0;
 
@@ -108,7 +125,7 @@ getCookie = function(name) {
 };
 
 showBullshits = function(container, data) {
-  var date, dateFormat, day, hours, key, minutes, month, society, value, year, _results;
+  var date, dateFormat, day, hours, key, minutes, month, rotate, society, url, value, year, _results;
   _results = [];
   for (key in data) {
     value = data[key];
@@ -119,11 +136,13 @@ showBullshits = function(container, data) {
     hours = date.getHours();
     minutes = date.getMinutes();
     dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes;
-    society = 'Вконтакте / Фейсбук / Твиттер';
+    url = window.location.origin + "/bullshit/" + value._id;
+    society = "<a href=\"http://vkontakte.ru/share.php?url=" + url + "&title=Bullshit Board\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=" + url + "\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. " + (_.escape(value.text)) + "&url=" + url + "\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>";
     if (getCookie('admin') === 'IDKFA') {
       society += " / <span class='wow_del_bullshit' data-id='" + value._id + "'>Участковому</span>";
     }
-    _results.push(container.append("<div class='bullshit'><div class='such_bullshit_message'>" + value.text + "</div><div class='many_footer'>[ " + dateFormat + " ] рассказать об этом: " + society + "</div></div>"));
+    rotate = Math.random() * (0.3 - (-0.3)) + -0.3;
+    _results.push(container.append("<div class='bullshit' style='transform: rotate(" + rotate + "deg); -webkit-transform: rotate(" + rotate + "deg);-moz-transform: rotate(" + rotate + "deg);-o-transform: rotate(" + rotate + "deg);-ms-transform: rotate(" + rotate + "deg) ;'><div class='such_bullshit_message'>" + value.text + "</div><div class='many_footer'>[ " + dateFormat + " ] рассказать об этом: " + society + "</div></div>"));
   }
   return _results;
 };
@@ -143,9 +162,13 @@ $('body').on('keyup', '.very_search_input', function() {
         showBullshits($('.very_bullshit_search_container'), data);
         return $('.so_sorry').hide();
       } else {
+        $('.very_bullshit_search_container').html('');
         return $('.so_sorry').show();
       }
     });
+  } else {
+    $('.very_bullshit_search_container').html('');
+    return $('.so_sorry').hide();
   }
 });
 
@@ -175,7 +198,8 @@ $('body').on('click', '.wow_show_search', function(e) {
   $('.wow_wrapper.main').fadeOut(500);
   $('.wow_wrapper.main div').fadeOut(500);
   $(".wow_wrapper.search div[class != 'so_sorry']").fadeIn(600);
-  return $('textarea').focus();
+  $('textarea').focus();
+  return $('.very_bullshit_search_container').html('');
 });
 
 $('body').on('click', '.wow_hide_search', function(e) {
@@ -187,11 +211,14 @@ $('body').on('click', '.wow_hide_search', function(e) {
 });
 
 $('body').on('click', '.wow_publish', function(e) {
-  var input;
+  var input, text;
   e.preventDefault();
   input = $(this).parent().find('.very_search_input');
+  input.css('text-transform', 'none');
+  text = input.val();
+  input.css('text-transform', 'uppercase');
   return $.post('/bullshit', {
-    text: input.val()
+    text: text
   }, function(data) {
     if (data.status === 'success') {
       $('.very_bullshit_container').html('');
@@ -224,8 +251,9 @@ $('body').on('click', '.wow_del_bullshit', function(e) {
 
 $(document).scroll(function(e) {
   if ($(window).height() + $(window).scrollTop() > $(document).height() - 300) {
+    pageId++;
+    console.log(pageId);
     return $.get("/bullshits/" + pageId, function(data) {
-      pageId++;
       return showBullshits($('.very_bullshit_container'), data);
     });
   }
@@ -256,7 +284,9 @@ if (typeof bullshit !== "undefined" && bullshit !== null) {
   hours = date.getHours();
   minutes = date.getMinutes();
   dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes;
-  $('.very_bullshit_search_container').append("<div class='bullshit'><div class='such_bullshit_message'>" + value.text + "</div><div class='many_footer'>[ " + dateFormat + " ] рассказать об этом: Вконтакте / Фейсбук / Твиттер</div></div>");
+  url = window.location.origin + "/bullshit/" + value._id;
+  society = "<a href=\"http://vkontakte.ru/share.php?url=" + url + "&title=Bullshit Board\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=" + url + "\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. " + (_.escape(value.text)) + "&url=" + url + "\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>";
+  $('.very_bullshit_search_container').append("<div class='bullshit'><div class='such_bullshit_message'>" + value.text + "</div><div class='many_footer'>[ " + dateFormat + " ] рассказать об этом: " + society + "</div></div>");
 }
 });
 
