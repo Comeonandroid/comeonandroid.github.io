@@ -6,12 +6,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/app.css" afterPath="$PROJECT_DIR$/public/stylesheets/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/app.js.map" afterPath="$PROJECT_DIR$/public/javascripts/app.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/app.js" afterPath="$PROJECT_DIR$/public/javascripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/bullshit.jade" afterPath="$PROJECT_DIR$/server/views/bullshit.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/api/index.coffee" afterPath="$PROJECT_DIR$/server/api/index.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/index.jade" afterPath="$PROJECT_DIR$/server/views/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/initialize.coffee" afterPath="$PROJECT_DIR$/app/initialize.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.coffee" afterPath="$PROJECT_DIR$/server/server.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/style.scss" afterPath="$PROJECT_DIR$/app/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -39,7 +35,7 @@
       <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="69" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+            <state line="44" column="23" selection-start="1719" selection-end="1735" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1190">
               <folding />
             </state>
           </provider>
@@ -57,18 +53,18 @@
       <file leaf-file-name="index.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/api/index.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="1" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+            <state line="34" column="23" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="1054">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initialize.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="initialize.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/initialize.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="40" selection-start="3742" selection-end="3742" vertical-scroll-proportion="10.346154" vertical-offset="1904" max-vertical-offset="2670">
+            <state line="123" column="18" selection-start="4244" selection-end="4244" vertical-scroll-proportion="0.5065274" vertical-offset="1949" max-vertical-offset="3667">
               <folding>
-                <marker date="1403540324000" expanded="true" signature="1632:1814" placeholder="..." />
+                <marker date="1403606656000" expanded="true" signature="1977:2159" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -77,16 +73,19 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="0" selection-start="7054" selection-end="7054" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="4485">
-              <folding />
+            <state line="244" column="0" selection-start="7936" selection-end="7936" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="5372">
+              <folding>
+                <marker date="1403606617000" expanded="true" signature="4898:4916" placeholder="..." />
+                <marker date="1403606617000" expanded="true" signature="5565:5982" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="250" column="29" selection-start="4180" selection-end="4180" vertical-scroll-proportion="0.20624152" vertical-offset="3598" max-vertical-offset="4335">
+            <state line="10" column="24" selection-start="157" selection-end="157" vertical-scroll-proportion="-2.463768" vertical-offset="0" max-vertical-offset="5474">
               <folding />
             </state>
           </provider>
@@ -113,7 +112,7 @@
       <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="405">
+            <state line="21" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="-14.875" vertical-offset="0" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
@@ -122,7 +121,7 @@
       <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="21" selection-start="917" selection-end="917" vertical-scroll-proportion="-21.25" vertical-offset="30" max-vertical-offset="750">
+            <state line="36" column="21" selection-start="917" selection-end="917" vertical-scroll-proportion="-24.25" vertical-offset="30" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -169,11 +168,11 @@
         <option value="$PROJECT_DIR$/public/javascripts/app.js" />
         <option value="$PROJECT_DIR$/server/server.coffee" />
         <option value="$PROJECT_DIR$/server/models/bullshit.coffee" />
-        <option value="$PROJECT_DIR$/server/views/index.jade" />
         <option value="$PROJECT_DIR$/server/views/bullshit.jade" />
-        <option value="$PROJECT_DIR$/app/initialize.coffee" />
-        <option value="$PROJECT_DIR$/app/style.scss" />
         <option value="$PROJECT_DIR$/server/api/index.coffee" />
+        <option value="$PROJECT_DIR$/server/views/index.jade" />
+        <option value="$PROJECT_DIR$/app/style.scss" />
+        <option value="$PROJECT_DIR$/app/initialize.coffee" />
       </list>
     </option>
   </component>
@@ -517,7 +516,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server/server.coffee">
@@ -574,7 +575,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="40" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="595">
           <folding>
-            <marker date="1403540324000" expanded="true" signature="1632:1814" placeholder="..." />
+            <marker date="1403606656000" expanded="true" signature="1977:2159" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -617,7 +618,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="11" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119">
           <folding>
-            <marker date="1403540324000" expanded="true" signature="1632:1814" placeholder="..." />
+            <marker date="1403606656000" expanded="true" signature="1977:2159" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -642,13 +643,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="805" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="0" selection-start="7054" selection-end="7054" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="4485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/brunch-config.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
@@ -658,7 +652,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="21" selection-start="917" selection-end="917" vertical-scroll-proportion="-21.25" vertical-offset="30" max-vertical-offset="750">
+        <state line="36" column="21" selection-start="917" selection-end="917" vertical-scroll-proportion="-24.25" vertical-offset="30" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
@@ -684,30 +678,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/libs/mongoose.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.111801244" vertical-offset="0" max-vertical-offset="805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/index.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="1" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="69" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+        <state line="21" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="-14.875" vertical-offset="0" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
@@ -719,19 +692,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/initialize.coffee">
+    <entry file="file://$PROJECT_DIR$/server/libs/mongoose.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="40" selection-start="3742" selection-end="3742" vertical-scroll-proportion="10.346154" vertical-offset="1904" max-vertical-offset="2670">
+        <state line="6" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="244" column="0" selection-start="7936" selection-end="7936" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="5372">
           <folding>
-            <marker date="1403540324000" expanded="true" signature="1632:1814" placeholder="..." />
+            <marker date="1403606617000" expanded="true" signature="4898:4916" placeholder="..." />
+            <marker date="1403606617000" expanded="true" signature="5565:5982" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="23" selection-start="1719" selection-end="1735" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/index.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="23" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="249" max-vertical-offset="1054">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="250" column="29" selection-start="4180" selection-end="4180" vertical-scroll-proportion="0.20624152" vertical-offset="3598" max-vertical-offset="4335">
+        <state line="10" column="24" selection-start="157" selection-end="157" vertical-scroll-proportion="-2.463768" vertical-offset="0" max-vertical-offset="5474">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/initialize.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="18" selection-start="4244" selection-end="4244" vertical-scroll-proportion="0.5065274" vertical-offset="1949" max-vertical-offset="3667">
+          <folding>
+            <marker date="1403606656000" expanded="true" signature="1977:2159" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

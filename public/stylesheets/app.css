@@ -1,3 +1,28 @@
+@keyframes blinking {
+  0% {
+    visibility: visible; }
+
+  50% {
+    visibility: hidden; } }
+
+@-webkit-keyframes blinking {
+  0% {
+    visibility: visible; }
+
+  50% {
+    visibility: hidden; } }
+
+@-moz-keyframes blinking {
+  0% {
+    visibility: visible; }
+
+  50% {
+    visibility: hidden; } }
+
+.blink {
+  -webkit-animation: blinking 0.8s step-end infinite alternate;
+  animation: blinking 0.8s step-end infinite alternate; }
+
 @font-face {
   font-family: Dat Font;
   font-style: normal;
@@ -73,7 +98,7 @@ a {
   left: 0;
   top: 0;
   letter-spacing: 1px;
-  padding-bottom: 30px; }
+  padding-bottom: 80px; }
 
 .wow_wrapper.main {
   letter-spacing: 1px; }

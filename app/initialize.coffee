@@ -28,6 +28,7 @@ getCookie = (name)->
   if matches then return decodeURIComponent(matches[1]) else return undefined
 
 showBullshits = (container,data) ->
+  console.log pageId
   for key,value of data
     date    = new Date(value.date)
     year    = date.getFullYear()
@@ -36,10 +37,19 @@ showBullshits = (container,data) ->
     hours   = date.getHours()
     minutes = date.getMinutes()
 
+    str = value.text
+    reg =  /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_]*)/igm;
+    pregMatch = str.match(reg);
+
+    value.text = str.replace(reg, (s) ->
+      msg = if /:\/\//.exec(s) is null then "http://" + s else s
+      return "<a href=\"#{msg}\">#{s}</a>"
+    )
+
     dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes
     url = window.location.origin + "/bullshit/" + value._id
 
-    society = "<a href=\"http://vkontakte.ru/share.php?url=#{url}&title=Bullshit Board\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=#{url}\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. #{_.escape(value.text)}&url=#{url}\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>"
+    society = "<a href=\"http://vkontakte.ru/share.php?url=#{url}&title=Bullshit Board&description=#{_.escape(value.text)}\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=#{url}\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. #{_.escape(value.text)}&url=#{url}\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>"
 
     if getCookie('admin') is 'IDKFA'
       society += " / <span class='wow_del_bullshit' data-id='#{value._id}'>Участковому</span>"
@@ -58,8 +68,8 @@ $.get "/bullshits/#{pageId}", (data)->
 
 $('body').on 'keyup','.very_search_input', ()->
   $(@).height($(@).height() + $(@).scrollTop())
-  if $(@).val().length > 2
-    text = $(@).val()
+  text = $(@).val()
+  if text.length > 2 and text.length < 400
     $.get "/bullshits/search/#{text}", (data)->
       if(data.length > 0)
         $('.very_bullshit_search_container').html('')
@@ -68,7 +78,10 @@ $('body').on 'keyup','.very_search_input', ()->
       else
         $('.very_bullshit_search_container').html('')
         $('.so_sorry').show()
-  else
+  else if text.length > 400
+    $(@).val(text.slice 0,400)
+    alert('Помни, краткость сестра таланта')
+  else if text.length < 2
     $('.very_bullshit_search_container').html('')
     $('.so_sorry').hide()
 
@@ -108,6 +121,7 @@ $('body').on 'click','.wow_publish', (e)->
   input.css 'text-transform', 'none'
   text = input.val()
   input.css 'text-transform', 'uppercase'
+  if text.length < 2 then return false
 
   $.post '/bullshit',{text: text}, (data)->
     if data.status is 'success'
@@ -144,11 +158,12 @@ year    = date.getFullYear()
 month   = monthText[date.getMonth()]
 day     = date.getDate()
 hours   = date.getHours()
-minutes = date.getMinutes()
+minutes = date.getMinutes() + ''
+minutes = if minutes.length > 1 then minutes else '0'+minutes
 
-dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes
+dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + '<span class="blink">:</span>' + minutes
 
-$('.very_date').text(dateFormat)
+$('.very_date').html(dateFormat)
 
 
 if bullshit?

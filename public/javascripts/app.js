@@ -125,7 +125,8 @@ getCookie = function(name) {
 };
 
 showBullshits = function(container, data) {
-  var date, dateFormat, day, hours, key, minutes, month, rotate, society, url, value, year, _results;
+  var date, dateFormat, day, hours, key, minutes, month, pregMatch, reg, rotate, society, str, url, value, year, _results;
+  console.log(pageId);
   _results = [];
   for (key in data) {
     value = data[key];
@@ -135,9 +136,17 @@ showBullshits = function(container, data) {
     day = date.getDate();
     hours = date.getHours();
     minutes = date.getMinutes();
+    str = value.text;
+    reg = /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_]*)/igm;
+    pregMatch = str.match(reg);
+    value.text = str.replace(reg, function(s) {
+      var msg;
+      msg = /:\/\//.exec(s) === null ? "http://" + s : s;
+      return "<a href=\"" + msg + "\">" + s + "</a>";
+    });
     dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes;
     url = window.location.origin + "/bullshit/" + value._id;
-    society = "<a href=\"http://vkontakte.ru/share.php?url=" + url + "&title=Bullshit Board\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=" + url + "\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. " + (_.escape(value.text)) + "&url=" + url + "\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>";
+    society = "<a href=\"http://vkontakte.ru/share.php?url=" + url + "&title=Bullshit Board&description=" + (_.escape(value.text)) + "\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=" + url + "\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. " + (_.escape(value.text)) + "&url=" + url + "\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>";
     if (getCookie('admin') === 'IDKFA') {
       society += " / <span class='wow_del_bullshit' data-id='" + value._id + "'>Участковому</span>";
     }
@@ -154,8 +163,8 @@ $.get("/bullshits/" + pageId, function(data) {
 $('body').on('keyup', '.very_search_input', function() {
   var text;
   $(this).height($(this).height() + $(this).scrollTop());
-  if ($(this).val().length > 2) {
-    text = $(this).val();
+  text = $(this).val();
+  if (text.length > 2 && text.length < 400) {
     return $.get("/bullshits/search/" + text, function(data) {
       if (data.length > 0) {
         $('.very_bullshit_search_container').html('');
@@ -166,7 +175,10 @@ $('body').on('keyup', '.very_search_input', function() {
         return $('.so_sorry').show();
       }
     });
-  } else {
+  } else if (text.length > 400) {
+    $(this).val(text.slice(0, 400));
+    return alert('Помни, краткость сестра таланта');
+  } else if (text.length < 2) {
     $('.very_bullshit_search_container').html('');
     return $('.so_sorry').hide();
   }
@@ -217,6 +229,9 @@ $('body').on('click', '.wow_publish', function(e) {
   input.css('text-transform', 'none');
   text = input.val();
   input.css('text-transform', 'uppercase');
+  if (text.length < 2) {
+    return false;
+  }
   return $.post('/bullshit', {
     text: text
   }, function(data) {
@@ -269,11 +284,13 @@ day = date.getDate();
 
 hours = date.getHours();
 
-minutes = date.getMinutes();
+minutes = date.getMinutes() + '';
 
-dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes;
+minutes = minutes.length > 1 ? minutes : '0' + minutes;
 
-$('.very_date').text(dateFormat);
+dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + '<span class="blink">:</span>' + minutes;
+
+$('.very_date').html(dateFormat);
 
 if (typeof bullshit !== "undefined" && bullshit !== null) {
   value = bullshit;

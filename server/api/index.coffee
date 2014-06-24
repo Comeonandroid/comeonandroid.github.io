@@ -1,18 +1,15 @@
 mongose = require '../libs/mongoose'
 app     = require '../app'
 BullshitModel = require '../models/bullshit'
-
+sanitizer = require 'sanitizer'
 
 app.get '/', (req, res)->
-  limit = BullshitModel.perPage
-  skip = if id is 0 || id is 1 then 0 else limit * (id - 1)
-  id   = if req.params.id isnt undefined then req.params.id else 0
   res.render 'index',{title:'Bullshit Board'}
 
 
 app.get '/bullshits/:id?', (req, res) ->
-  id   = if req.params.id isnt undefined then req.params.id else 0
   limit = BullshitModel.perPage
+  id   = if req.params.id isnt undefined then req.params.id else 0
   skip = if id is 0 then 0 else limit * id
   bullshit = BullshitModel.find({}).sort(date: -1).limit(limit).skip(skip).exec (err, bullshits) ->
     if err
@@ -34,18 +31,10 @@ app.get '/bullshit/:id', (req, res) ->
     res.render 'bullshit',{title:'Bullshit Board',bullshit: JSON.stringify bullshit}
 
 app.post '/bullshit', (req, res)->
-
-  str = req.body.text
-  reg =  /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_]*)/igm;
-  pregMatch = str.match(reg);
-
-  str = str.replace(reg, (s) ->
-    msg = if /:\/\//.exec(s) is null then "http://" + s else s
-    return "<a href=\"#{msg}\">#{s}</a>"
-  )
-
+  text = sanitizer.sanitize(req.body.text)
+  text = text.slice 0,400
   bullshit = new BullshitModel({
-    text: str,
+    text: text,
     date: Date.now()
   })
   if req.cookies.banForHour isnt  'true'
