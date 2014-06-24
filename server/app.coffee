@@ -7,7 +7,7 @@ cookieParser   = require 'cookie-parser'
 path           = require 'path'
 
 app = express()
-#app.use favicon()
+app.use favicon(path.join(__dirname,'../public','img','Fav-Bullshit.png'));
 app.use cookieParser('SAJdjnxsUI')
 app.use bodyParser.urlencoded()
 app.use bodyParser.json()
