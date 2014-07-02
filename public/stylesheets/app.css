@@ -174,7 +174,7 @@ a {
   padding-bottom: 0.6%;
   font-size: 125%;
   line-height: 175%;
-  word-break: break-all; }
+  word-break: normal; }
 
 .many_footer {
   font-size: 62.5%;

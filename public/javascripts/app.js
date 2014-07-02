@@ -91,7 +91,7 @@
   globals.require.brunch = true;
 })();
 require.register("initialize", function(exports, require, module) {
-var date, dateFormat, day, getCookie, hours, htmlEscaper, htmlEscapes, minutes, month, monthText, pageId, showBullshits, society, url, value, year;
+var date, dateFormat, day, getCookie, hours, htmlEscaper, htmlEscapes, minutes, month, monthText, pageId, pregMatch, reg, rotate, showBullshits, society, str, url, value, year;
 
 htmlEscapes = {
   '&': '&amp;',
@@ -137,7 +137,7 @@ showBullshits = function(container, data) {
     hours = date.getHours();
     minutes = date.getMinutes();
     str = value.text;
-    reg = /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_]*)/igm;
+    reg = /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_=\?\&;#%\$\(\)]*)/igm;
     pregMatch = str.match(reg);
     value.text = str.replace(reg, function(s) {
       var msg;
@@ -300,10 +300,22 @@ if (typeof bullshit !== "undefined" && bullshit !== null) {
   day = date.getDate();
   hours = date.getHours();
   minutes = date.getMinutes();
+  str = value.text;
+  reg = /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_=\?\&;#%\$\(\)]*)/igm;
+  pregMatch = str.match(reg);
+  value.text = str.replace(reg, function(s) {
+    var msg;
+    msg = /:\/\//.exec(s) === null ? "http://" + s : s;
+    return "<a href=\"" + msg + "\">" + s + "</a>";
+  });
   dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes;
   url = window.location.origin + "/bullshit/" + value._id;
-  society = "<a href=\"http://vkontakte.ru/share.php?url=" + url + "&title=Bullshit Board\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=" + url + "\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. " + (_.escape(value.text)) + "&url=" + url + "\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>";
-  $('.very_bullshit_search_container').append("<div class='bullshit'><div class='such_bullshit_message'>" + value.text + "</div><div class='many_footer'>[ " + dateFormat + " ] рассказать об этом: " + society + "</div></div>");
+  society = "<a href=\"http://vkontakte.ru/share.php?url=" + url + "&title=Bullshit Board&description=" + (_.escape(value.text)) + "\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=" + url + "\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. " + (_.escape(value.text)) + "&url=" + url + "\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>";
+  if (getCookie('admin') === 'IDKFA') {
+    society += " / <span class='wow_del_bullshit' data-id='" + value._id + "'>Участковому</span>";
+  }
+  rotate = Math.random() * (0.3 - (-0.3)) + -0.3;
+  $('.very_bullshit_search_container').append("<div class='bullshit' style='transform: rotate(" + rotate + "deg); -webkit-transform: rotate(" + rotate + "deg);-moz-transform: rotate(" + rotate + "deg);-o-transform: rotate(" + rotate + "deg);-ms-transform: rotate(" + rotate + "deg) ;'><div class='such_bullshit_message'>" + value.text + "</div><div class='many_footer'>[ " + dateFormat + " ] рассказать об этом: " + society + "</div></div>");
 }
 });
 

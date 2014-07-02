@@ -206,7 +206,7 @@ a {
   padding-bottom: 0.60%;
   font-size: 125%;
   line-height: 175%;
-  word-break: break-all;
+  word-break: normal;
 }
 
 .many_footer {
@@ -295,7 +295,7 @@ a {
   text-align: center;
 }
 .wow_show_about{
-  transition:All 0.4s ease;
+  transition:All 0.4s e
   -webkit-transition:All 0.4s ease;
   -moz-transition:All 0.4s ease;
   -o-transition:All 0.4s ease;
