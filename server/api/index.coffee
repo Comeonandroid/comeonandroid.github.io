@@ -33,9 +33,11 @@ app.get '/bullshit/:id', (req, res) ->
 app.post '/bullshit', (req, res)->
   text = sanitizer.sanitize(req.body.text)
   text = text.slice 0,400
+  ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress;
   bullshit = new BullshitModel({
     text: text,
-    date: Date.now()
+    date: Date.now(),
+    ip:   ip
   })
   if req.cookies.banForHour isnt  'true'
     bullshit.save (err)->

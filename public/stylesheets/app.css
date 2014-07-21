@@ -104,8 +104,10 @@ a {
   letter-spacing: 1px; }
 
 .wow_wrapper.about {
-  overflow-x: hidden;
-  left: -320px;
+  overflow: visible;
+  height: 100%;
+  max-height: 100%;
+  left: -335px;
   top: 0;
   bottom: 0;
   position: fixed;
@@ -122,11 +124,21 @@ a {
     background: url('/img/cross-black.png') no-repeat;
     margin: 45px auto 0px auto; }
 
+.about_header_nosrollbar_wrapper {
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  width: 310px; }
+
 .about_header {
+  height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
   color: #000;
   font-size: 100%;
   text-align: center;
-  padding: 12% 0; }
+  padding: 12% 0;
+  width: 335px; }
 
 .about_message {
   padding: 9% 12%;
@@ -150,6 +162,7 @@ a {
   text-align: center; }
 
 .place_list {
+  min-height: 380px;
   font-weight: bold;
   color: #000; }
   .place_list .place_list_header {
@@ -259,11 +272,19 @@ a {
 
 @media (max-width: 770px) and (min-width: 540px) {
   body {
-    font-size: 12pt !important; } }
+    font-size: 12pt !important; }
+  .many_header {
+    margin-bottom: 4.6%; } }
 
 @media (max-width: 540px) {
   body {
-    font-size: 9pt !important; } }
+    font-size: 9pt !important; }
+  .many_header {
+    margin-bottom: 6%; } }
+
+@media (max-width: 1000px) and (min-width: 100px) {
+  .so_time_span {
+    display: none; } }
 
 
 /*# sourceMappingURL=app.css.map*/

@@ -142,13 +142,17 @@ showBullshits = function(container, data) {
     value.text = str.replace(reg, function(s) {
       var msg;
       msg = /:\/\//.exec(s) === null ? "http://" + s : s;
-      return "<a href=\"" + msg + "\">" + s + "</a>";
+      s = s.replace(new RegExp("http://", 'i'), '').replace(new RegExp("www.", 'i'), '');
+      if (s.length > 20) {
+        s = s.slice(0, 20) + '...';
+      }
+      return "<a target=\"_blank\" href=\"" + msg + "\">" + s + "</a>";
     });
     dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes;
     url = window.location.origin + "/bullshit/" + value._id;
-    society = "<a href=\"http://vkontakte.ru/share.php?url=" + url + "&title=Bullshit Board&description=" + (_.escape(value.text)) + "\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=" + url + "\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. " + (_.escape(value.text)) + "&url=" + url + "\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>";
+    society = "<a href=\"http://vkontakte.ru/share.php?url=" + url + "&title=Bullshit Board&description=" + (_.escape(value.text)) + "\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=" + url + "&t=asdas\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. " + (_.escape(value.text)) + "&url=" + url + "\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>";
     if (getCookie('admin') === 'IDKFA') {
-      society += " / <span class='wow_del_bullshit' data-id='" + value._id + "'>Участковому</span>";
+      society += " / <span class='wow_del_bullshit' data-id='" + value._id + "'>Участковому</span>/ ip: " + value.ip;
     }
     rotate = Math.random() * (0.3 - (-0.3)) + -0.3;
     _results.push(container.append("<div class='bullshit' style='transform: rotate(" + rotate + "deg); -webkit-transform: rotate(" + rotate + "deg);-moz-transform: rotate(" + rotate + "deg);-o-transform: rotate(" + rotate + "deg);-ms-transform: rotate(" + rotate + "deg) ;'><div class='such_bullshit_message'>" + value.text + "</div><div class='many_footer'>[ " + dateFormat + " ] рассказать об этом: " + society + "</div></div>"));
@@ -160,48 +164,52 @@ $.get("/bullshits/" + pageId, function(data) {
   return showBullshits($('.very_bullshit_container'), data);
 });
 
-$('body').on('keyup', '.very_search_input', function() {
+$('body').on('keyup', '.very_search_input', function(e) {
   var text;
-  $(this).height($(this).height() + $(this).scrollTop());
-  text = $(this).val();
-  if (text.length > 2 && text.length < 400) {
-    return $.get("/bullshits/search/" + text, function(data) {
-      if (data.length > 0) {
-        $('.very_bullshit_search_container').html('');
-        showBullshits($('.very_bullshit_search_container'), data);
-        return $('.so_sorry').hide();
-      } else {
-        $('.very_bullshit_search_container').html('');
-        return $('.so_sorry').show();
-      }
-    });
-  } else if (text.length > 400) {
-    $(this).val(text.slice(0, 400));
-    return alert('Помни, краткость сестра таланта');
-  } else if (text.length < 2) {
-    $('.very_bullshit_search_container').html('');
-    return $('.so_sorry').hide();
+  e.preventDefault();
+  if (e.which === 13) {
+    $('.wow_publish').click();
+    return false;
+  } else {
+    $(this).height($(this).height() + $(this).scrollTop());
+    text = $(this).val();
+    if (text.length > 2 && text.length < 400) {
+      return $.get("/bullshits/search/" + text, function(data) {
+        if (data.length > 0) {
+          $('.very_bullshit_search_container').html('');
+          showBullshits($('.very_bullshit_search_container'), data);
+          return $('.so_sorry').hide();
+        } else {
+          $('.very_bullshit_search_container').html('');
+          return $('.so_sorry').show();
+        }
+      });
+    } else if (text.length > 400) {
+      $(this).val(text.slice(0, 400));
+      return alert('Помни, краткость сестра таланта');
+    } else if (text.length < 2) {
+      $('.very_bullshit_search_container').html('');
+      return $('.so_sorry').hide();
+    }
   }
 });
 
 $('body').on('click', '.wow_show_about', function(e) {
   e.preventDefault();
   $(this).css('opacity', 0);
-  $('.about').css({
-    left: '0px',
-    overflow: 'visible'
-  });
-  return $('.main').css('left', '320px');
+  $('.about').css('left', '0px');
+  $('.main').css('left', '335px');
+  return $('body').css('overflow', 'hidden');
 });
 
 $('body').on('click', '.wow_hide_about', function(e) {
   e.preventDefault();
   $('.wow_show_about').css('opacity', 1);
   $('.about').css({
-    left: '-320px',
-    overflow: 'hidden'
+    left: '-335px'
   });
-  return $('.main').css('left', '0px');
+  $('.main').css('left', '0px');
+  return $('body').css('overflow', 'auto');
 });
 
 $('body').on('click', '.wow_show_search', function(e) {
@@ -288,7 +296,7 @@ minutes = date.getMinutes() + '';
 
 minutes = minutes.length > 1 ? minutes : '0' + minutes;
 
-dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + '<span class="blink">:</span>' + minutes;
+dateFormat = day + ' ' + month + ' ' + year + '<span class="so_time_span"> / ' + hours + '<span class="blink">:</span>' + minutes + '</span>';
 
 $('.very_date').html(dateFormat);
 
@@ -306,7 +314,7 @@ if (typeof bullshit !== "undefined" && bullshit !== null) {
   value.text = str.replace(reg, function(s) {
     var msg;
     msg = /:\/\//.exec(s) === null ? "http://" + s : s;
-    return "<a href=\"" + msg + "\">" + s + "</a>";
+    return "<a target=\"_blank\" href=\"" + msg + "\">" + s + "</a>";
   });
   dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes;
   url = window.location.origin + "/bullshit/" + value._id;
