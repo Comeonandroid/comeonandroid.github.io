@@ -38,7 +38,7 @@ showBullshits = (container,data) ->
     minutes = date.getMinutes()
 
     str = value.text
-    reg =  /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_=\?\&;#%\$\(\)]*)/igm;
+    reg =  /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_=\?\!\&;#%\$\(\)]*)/igm;
     pregMatch = str.match(reg);
 
     value.text = str.replace(reg, (s) ->
@@ -52,7 +52,7 @@ showBullshits = (container,data) ->
     dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes
     url = window.location.origin + "/bullshit/" + value._id
 
-    society = "<a href=\"http://vkontakte.ru/share.php?url=#{url}&title=Bullshit Board&description=#{_.escape(value.text)}\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=#{url}&t=asdas\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. #{_.escape(value.text)}&url=#{url}\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>"
+    society = "<a href=\"http://vkontakte.ru/share.php?url=#{url}&title=Bullshit Board&image=http://zbs-bs.ru/img/VK.png&description=#{_.escape(value.text)}\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=#{url}&t=asdas\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. #{_.escape(value.text)}&url=#{url}\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>"
 
     if getCookie('admin') is 'IDKFA'
       society += " / <span class='wow_del_bullshit' data-id='#{value._id}'>Участковому</span>/ ip: #{value.ip}"
@@ -188,7 +188,7 @@ if bullshit?
   minutes = date.getMinutes()
 
   str = value.text
-  reg =  /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_=\?\&;#%\$\(\)]*)/igm;
+  reg =  /(([a-z]+:\/\/(www\.)*)*[a-z0-9\-_]+\.[a-z]+[a-z0-9\.\/\-_=\?\!\&;#%\$\(\)]*)/igm;
   pregMatch = str.match(reg);
 
   value.text = str.replace(reg, (s) ->
@@ -199,7 +199,8 @@ if bullshit?
   dateFormat = day + ' ' + month + ' ' + year + ' / ' + hours + ':' + minutes
   url = window.location.origin + "/bullshit/" + value._id
 
-  society = "<a href=\"http://vkontakte.ru/share.php?url=#{url}&title=Bullshit Board&description=#{_.escape(value.text)}\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=#{url}\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. #{_.escape(value.text)}&url=#{url}\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>"
+  society = "<a href=\"http://vkontakte.ru/share.php?url=#{url}&title=Bullshit Board&image=http://zbs-bs.ru/img/VK.png&description=#{_.escape(value.text)}\" target=\"_blank\">Вконтакте</a> / <a target=\"_blank\" href=\"http://www.facebook.com/sharer/sharer.php?u=#{url}&t=asdas\">Фейсбук</a> / <a href=\"https://twitter.com/intent/tweet?text=Bullshit Board. #{_.escape(value.text)}&url=#{url}\" rel=\"nofollow\" target=\"_blank\">Твиттер</a>"
+
 
   if getCookie('admin') is 'IDKFA'
     society += " / <span class='wow_del_bullshit' data-id='#{value._id}'>Участковому</span>"

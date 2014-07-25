@@ -78,7 +78,7 @@ a {
 
 .very_date {
   float: right;
-  width: 20%;
+  width: 30%;
   text-align: right; }
 
 
@@ -138,10 +138,10 @@ a {
   font-size: 100%;
   text-align: center;
   padding: 12% 0;
-  width: 335px; }
+  width: 320px; }
 
 .about_message {
-  padding: 9% 12%;
+  padding: 9% 12% 9% 10.5%;
   font-family: "Fonti Sans";
   font-size: 10pt;
   color: #000;
@@ -280,7 +280,9 @@ a {
   body {
     font-size: 9pt !important; }
   .many_header {
-    margin-bottom: 6%; } }
+    margin-bottom: 6%; }
+  .so_adaptive {
+    display: none; } }
 
 @media (max-width: 1000px) and (min-width: 100px) {
   .so_time_span {
