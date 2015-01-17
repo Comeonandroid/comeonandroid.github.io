@@ -38,7 +38,7 @@ body {
   position: fixed;
   width: 100%;
   max-width: 1440px;
-  min-width: 320px; }
+  min-width: 620px; }
   .fixed-container.active {
     -webkit-transform: translateX(-30%);
     -moz-transform: translateX(-30%);
@@ -100,7 +100,7 @@ footer ul.social {
   position: relative;
   width: 100%;
   max-width: 1440px;
-  min-width: 320px;
+  min-width: 620px;
   margin: 0 auto; }
 
 .navbar {
@@ -211,6 +211,7 @@ footer ul.social {
     .right-menu .menu-item:after {
       clear: both; }
     .right-menu .menu-item a {
+      visibility: hidden;
       display: inline-block;
       font-family: "FranklinGothicDemiC";
       font-size: 32%;
@@ -237,6 +238,7 @@ footer ul.social {
 .fixed-container.active .right-menu {
   margin-top: -1%; }
   .fixed-container.active .right-menu .menu-item {
+    visibility: visible;
     margin-bottom: 12%; }
 
 .work-container {
