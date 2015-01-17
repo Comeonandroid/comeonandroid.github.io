@@ -1,1 +1,352 @@
-@font-face{font-family:FranklinGothicBookCondC;font-style:normal;font-weight:400;src:url(../fonts/FranklinGothicBookCondC.otf) format("opentype")}@font-face{font-family:FranklinGothicDemiC;font-style:normal;font-weight:400;src:url(../fonts/FranklinGothicDemiC.otf) format("opentype")}a{color:#fff;text-decoration:underline}a:hover{color:#868686}body{background-color:#141414;font-size:100px;min-height:2000px}@media (min-width:1600px){body{font-size:110px}}@media (max-width:1220px){body{font-size:90px}}@media (max-width:1000px){body{font-size:80px}}@media (max-width:680px){body{font-size:70px}}.fixed-container{-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out;position:fixed;width:100%;max-width:1440px;min-width:500px}.fixed-container.active{-webkit-transform:translateX(-30%);-moz-transform:translateX(-30%);-ms-transform:translateX(-30%);-o-transform:translateX(-30%);transform:translateX(-30%)}@media (max-width:680px){.fixed-container{position:relative}}.body-wrap{-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out;width:100%}.body-wrap.active{-webkit-transform:translateX(-30%);-moz-transform:translateX(-30%);-ms-transform:translateX(-30%);-o-transform:translateX(-30%);transform:translateX(-30%)}header{z-index:5}header.fixed-container{left:0;top:0}header .logo{float:left;width:11%;margin-top:-1%;max-width:127px;max-height:66px}.down-arrow{position:relative;display:inline-block}footer.fixed-container{left:0;bottom:0}footer ul.social{padding:4.1% 3.7% 3.5% 3.5%;margin:0}footer ul.social li{margin-right:.3%;display:inline-block}footer ul.social li.lang{margin-left:6%}footer ul.social li a{color:#fff;font-family:FranklinGothicBookCondC;font-size:15%;text-decoration:underline}.container{position:relative;width:100%;max-width:1440px;min-width:500px;margin:0 auto}.navbar{position:relative;padding:4.1% 3.7% 3.5% 3.5%}.right-side{cursor:pointer;float:right;width:38.7%}.menu-icon-cont{float:right;position:relative;overflow:hidden;width:30px;height:30px}.menu-icon-cont.active .icon-menu{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);right:34px;opacity:.1}.menu-icon-cont.active .icon-cross{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);right:0;opacity:1}.icon-menu{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;transition:all .2s ease-out;cursor:active;position:absolute;right:0;opacity:1}.icon-cross{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;transition:all .2s ease-out;cursor:active;position:absolute;right:-25px;opacity:.1}.label{font-family:FranklinGothicBookCondC;font-size:12%}.main-desc{width:50%;color:#fff;font-family:FranklinGothicDemiC;font-size:24%;letter-spacing:.027em;padding:4.1% 3.7% 3.5% 3.5%;padding-top:14.5%;line-height:155%}.main-desc .contact-us{margin-top:6%}@media (max-width:680px){.main-desc{width:75%}}.right-menu{-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out;position:fixed;right:-27.8%;width:33%;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);margin-top:30px}.right-menu .menu-item{-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out;*zoom:1;color:#fff;margin-bottom:3%;line-height:30px}.right-menu .menu-item:before,.right-menu .menu-item:after{content:" ";display:table}.right-menu .menu-item:after{clear:both}.right-menu .menu-item a{display:inline-block;font-family:FranklinGothicDemiC;font-size:30%;float:right;vertical-align:top;position:relative}.right-menu .menu-item a .label{position:absolute;bottom:-100%;font-size:45%;right:0}.right-menu .menu-item .dot{display:inline-block;background-color:#fff;border:2px solid #fff;width:8px;height:8px;border-radius:50%;float:left;margin-top:1.5%}.right-menu .menu-item.active .dot{background-color:#141414}.fixed-container.active .right-menu .menu-item{margin-bottom:9%}.work-container{position:relative;width:45%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);text-align:center;left:65%;z-index:3}@media (max-width:1220px){.work-container{width:50%}}@media (max-width:1000px){.work-container{width:58%;left:61%}}@media (max-width:680px){.work-container{width:75%;left:50%}}section{width:100%;position:relative}section.work{padding-top:10%;padding-bottom:18%}.recent{width:100%;clear:both;font-family:FranklinGothicBookCondC;font-size:28%;letter-spacing:.027em;color:#fff;position:relative;display:inline-block;vertical-align:middle}.push-slider{position:relative}.push-slider .push-slide{text-align:center;position:absolute;left:0;top:0;width:100%;background-color:#141414;border:1px solid #fff}.push-slider .push-slide.desc-slide{border:1px solid #fff!important}.push-slider .push-slide.active{position:relative;border:0}.push-slider .push-slide.active img,.push-slider .push-slide.active .desc{visibility:visible}.push-slider .push-slide .desc{visibility:hidden}.push-slider .push-slide img{visibility:hidden;display:inline-block;vertical-align:middle;max-width:100%;max-height:100%}.push-slider .push-slide img.hide{visibility:hidden!important}.desc{position:absolute;left:0;top:0;background-color:#141414;color:#fff;text-align:left;padding:5%;font-family:FranklinGothicBookCondC}.desc .title{font-size:40%;display:block}.desc .body{font-size:15%;padding:6% 0;line-height:175%}.desc .with{font-size:12%;line-height:175%}.desc .with .strong{display:block;font-size:160%;margin-bottom:3%}.button{background-color:#141414;display:inline-block;color:#fff;font-family:FranklinGothicBookCondC;font-size:16%;padding:2.4% 6%;border:1px solid #fff;color:#fff!important;text-decoration:none!important}
+@font-face {
+  font-family: "FranklinGothicBookCondC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FranklinGothicBookCondC.otf") format("opentype"); }
+@font-face {
+  font-family: "FranklinGothicDemiC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FranklinGothicDemiC.otf") format("opentype"); }
+a {
+  color: white;
+  text-decoration: underline; }
+  a:hover {
+    color: #868686; }
+
+body {
+  background-color: #141414;
+  font-size: 100px;
+  min-height: 2000px; }
+  @media (min-width: 1600px) {
+    body {
+      font-size: 110px; } }
+  @media (max-width: 1220px) {
+    body {
+      font-size: 90px; } }
+  @media (max-width: 1000px) {
+    body {
+      font-size: 85px; } }
+  @media (max-width: 680px) {
+    body {
+      font-size: 80px; } }
+
+.fixed-container {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: fixed;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 320px; }
+  .fixed-container.active {
+    -webkit-transform: translateX(-30%);
+    -moz-transform: translateX(-30%);
+    -ms-transform: translateX(-30%);
+    -o-transform: translateX(-30%);
+    transform: translateX(-30%); }
+  @media (max-width: 680px) {
+    .fixed-container {
+      position: relative; } }
+
+.body-wrap {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  width: 100%; }
+  .body-wrap.active {
+    -webkit-transform: translateX(-30%);
+    -moz-transform: translateX(-30%);
+    -ms-transform: translateX(-30%);
+    -o-transform: translateX(-30%);
+    transform: translateX(-30%); }
+
+header {
+  z-index: 5; }
+  header.fixed-container {
+    left: 0px;
+    top: 0px; }
+  header .logo {
+    float: left;
+    margin-top: -1%;
+    width: 127px;
+    height: 66px; }
+
+.down-arrow {
+  position: relative;
+  display: inline-block; }
+
+footer.fixed-container {
+  left: 0px;
+  bottom: 0px; }
+footer ul.social {
+  padding: 4.1% 3.7% 1% 4.8%;
+  margin: 0px; }
+  @media (max-width: 680px) {
+    footer ul.social {
+      margin-top: -14%; } }
+  footer ul.social li {
+    margin-right: 0.3%;
+    display: inline-block; }
+    footer ul.social li.lang {
+      margin-left: 6%; }
+    footer ul.social li a {
+      color: white;
+      font-family: "FranklinGothicBookCondC";
+      font-size: 15%;
+      text-decoration: underline; }
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+.navbar {
+  position: relative;
+  padding: 4.1% 3.7% 3.5% 4.3%; }
+
+.right-side {
+  cursor: pointer;
+  float: right;
+  width: 38.7%; }
+
+.menu-icon-cont {
+  float: right;
+  position: relative;
+  overflow: hidden;
+  width: 30px;
+  height: 30px; }
+  .menu-icon-cont.active .icon-menu {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: 34px;
+    opacity: 0.1; }
+  .menu-icon-cont.active .icon-cross {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    right: 0px;
+    opacity: 1; }
+
+.icon-menu {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: active;
+  position: absolute;
+  right: 0px;
+  opacity: 1; }
+
+.icon-cross {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: active;
+  position: absolute;
+  right: -25px;
+  opacity: 0.1; }
+
+.label {
+  font-family: "FranklinGothicBookCondC";
+  font-size: 12%; }
+
+.main-desc {
+  width: 50%;
+  color: white;
+  font-family: "FranklinGothicDemiC";
+  font-size: 24%;
+  letter-spacing: 0.027em;
+  padding: 4.1% 3.7% 3.5% 4.3%;
+  padding-top: 14.5%;
+  line-height: 155%; }
+  .main-desc .contact-us {
+    margin-top: 6%; }
+  @media (max-width: 680px) {
+    .main-desc {
+      width: 75%; } }
+
+.right-menu {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: fixed;
+  right: -27.8%;
+  width: 33%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: 30px; }
+  .right-menu .menu-item {
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    *zoom: 1;
+    color: white;
+    margin-bottom: 3%;
+    line-height: 30px; }
+    .right-menu .menu-item:before, .right-menu .menu-item:after {
+      content: " ";
+      display: table; }
+    .right-menu .menu-item:after {
+      clear: both; }
+    .right-menu .menu-item a {
+      display: inline-block;
+      font-family: "FranklinGothicDemiC";
+      font-size: 32%;
+      float: right;
+      vertical-align: top;
+      position: relative; }
+      .right-menu .menu-item a .label {
+        position: absolute;
+        bottom: -100%;
+        font-size: 45%;
+        right: 0px; }
+    .right-menu .menu-item .dot {
+      display: inline-block;
+      background-color: white;
+      border: 2px solid white;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      float: left;
+      margin-top: 1.5%; }
+    .right-menu .menu-item.active .dot {
+      background-color: #141414; }
+
+.fixed-container.active .right-menu {
+  margin-top: -1%; }
+  .fixed-container.active .right-menu .menu-item {
+    margin-bottom: 12%; }
+
+.work-container {
+  position: relative;
+  width: 45%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  left: 65%;
+  z-index: 3; }
+  @media (max-width: 1220px) {
+    .work-container {
+      width: 50%; } }
+  @media (max-width: 1000px) {
+    .work-container {
+      width: 58%;
+      left: 61%; } }
+  @media (max-width: 680px) {
+    .work-container {
+      width: 75%;
+      left: 50%; } }
+
+section {
+  width: 100%;
+  position: relative; }
+  section.work {
+    padding-top: 8%;
+    padding-bottom: 12%; }
+
+.recent {
+  width: 100%;
+  clear: both;
+  font-family: "FranklinGothicBookCondC";
+  font-size: 28%;
+  letter-spacing: 0.027em;
+  color: white;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; }
+
+.push-slider {
+  position: relative; }
+  .push-slider .push-slide {
+    cursor: e-resize;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #141414;
+    border: 1px solid white; }
+    .push-slider .push-slide.desc-slide {
+      border: 1px solid white !important; }
+    .push-slider .push-slide.active {
+      position: relative;
+      border: none; }
+      .push-slider .push-slide.active img, .push-slider .push-slide.active .desc {
+        visibility: visible; }
+      .push-slider .push-slide.active img {
+        position: relative;
+        left: 2px;
+        top: 2px; }
+    .push-slider .push-slide .desc {
+      visibility: hidden; }
+    .push-slider .push-slide img {
+      visibility: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100%;
+      max-height: 100%; }
+      .push-slider .push-slide img.hide {
+        visibility: hidden !important; }
+
+.desc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #141414;
+  color: white;
+  text-align: left;
+  padding: 5%;
+  font-family: "FranklinGothicBookCondC"; }
+  .desc .title {
+    font-size: 40%;
+    display: block; }
+  .desc .body {
+    font-size: 15%;
+    padding: 6% 0%;
+    line-height: 175%; }
+  .desc .with {
+    font-size: 12%;
+    line-height: 175%; }
+    .desc .with .strong {
+      display: block;
+      font-size: 160%;
+      margin-bottom: 3%; }
+
+.button {
+  background-color: #141414;
+  display: inline-block;
+  color: white;
+  font-family: "FranklinGothicBookCondC";
+  font-size: 16%;
+  padding: 2.3% 6%;
+  border: 1px solid white;
+  color: white !important;
+  text-decoration: none !important; }
+
+
+/*# sourceMappingURL=app.css.map*/

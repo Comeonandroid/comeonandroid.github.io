@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
   <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="stylesheets/app.css">
   <script src="javascripts/vendor.js"></script>
   <script src="javascripts/app.js"></script>
   <script>
     require('initialize');
-
+    
   </script>
 </head>
 <body>
@@ -19,8 +20,6 @@
           </div>
         </div>
       </header>
-
-      <!--ФИКСИРОВАННЫЙ КОНТЕНТ -->
       <div class="fixed-body fixed-container">
         <div class="main-desc">
           <p>
@@ -31,17 +30,12 @@
           </p>
           <p class="contact-us">Contact us, phone: +7-919-891-45-73,<br>e-mail: gittesdesign@gmail.com</p>
         </div>
-        <!-- ЕТО МЕНЮ! -->
         <div class="right-menu main_menu">
-
-          <!-- ПУНКТ МЕНЮ -->
           <div data-scroll-target="movebitch_1" class="menu-item"><a href="#movebitch_1">  Move Bitch!
               <div class="label">Branding</div></a>
             <div class="dot"></div>
           </div>
-          <!-- КОНЧИЛСЯ ПУНКТ МЕНЮ -->
-
-            <div data-scroll-target="movebitch_2" class="menu-item"><a href="#movebitch_2">  Move Bitch!
+          <div data-scroll-target="movebitch_2" class="menu-item"><a href="#movebitch_2">  Move Bitch!
               <div class="label">Web</div></a>
             <div class="dot"></div>
           </div>
@@ -50,27 +44,25 @@
             <div class="dot"></div>
           </div>
         </div>
-        <!-- ЕТО МЕНЮ ЗАКОНЧИЛОСЬ! -->
-
       </div>
-
-
+      <footer class="fixed-container">
+        <ul class="social">
+          <li><a href="https://www.behance.net/gittes">Behance</a></li>
+          <li><a href="http://instagram.com/gittesdesign">Intstagram</a></li>
+          <li><a href="https://www.facebook.com/gittesdesign">Facebook</a></li>
+          <li class="lang"><a href="#">Rus</a></li>
+        </ul>
+      </footer>
       <div class="body-wrap">
         <section>
           <div class="work-container">
             <div class="recent">Recent works</div><img src="img/arrow-down.png" class="down-arrow">
           </div>
         </section>
-
-
-        <!-- РАБОТА -->
         <section id="movebitch_1" class="work">
           <div class="work-container">
             <div class="push-slider">
-
-
-              <div class="push-slide desc-slide">
-                  <img src="img/slide.jpg" class="hide">
+              <div class="push-slide desc-slide"><img src="img/slide.jpg" class="hide">
                 <div class="desc">
                   <div class="title">Move Bitch Stuff</div>
                   <div class="body">Founded in 1935, Galbally & O’Bryan has established itself as one of Victoria’s leading law firms. We have a reputation for providing ethical, high quality. Galbally & O’Bryan. Founded in 1935, Galbally & O’Bryan has established itself as one of Victoria’s leading law firms. We have a reputation for providing ethical, high quality. Galbally & O’Bryan.</div>
@@ -79,20 +71,13 @@
                   </div>
                 </div>
               </div>
-
-              <div class="push-slide"><img src="img/slide.jpg"></div>
-
               <div class="push-slide"><img src="img/slide.jpg"></div>
               <div class="push-slide"><img src="img/slide.jpg"></div>
               <div class="push-slide"><img src="img/slide.jpg"></div>
-
-                <a href="#" class="button">View full project on Behance</a>
+              <div class="push-slide"><img src="img/slide.jpg"></div><a href="#" class="button">View full project on Behance</a>
             </div>
           </div>
         </section>
-        <!-- УЙДИ НА ФЕДОТА -->
-
-
         <section id="movebitch_2" class="work">
           <div class="work-container">
             <div class="push-slider">
@@ -132,14 +117,6 @@
           </div>
         </section>
       </div>
-      <footer class="fixed-container">
-        <ul class="social">
-          <li><a href="#">Behance</a></li>
-          <li><a href="#">Intstagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li class="lang"><a href="#">Rus</a></li>
-        </ul>
-      </footer>
     </div>
   </div>
 </body>
