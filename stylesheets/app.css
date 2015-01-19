@@ -308,8 +308,6 @@ section {
     position: absolute;
     left: 0;
     top: 0;
-    bottom: 0;
-    right: 0;
     width: 100%;
     background-color: #141414;
     border: 1px solid white; }
@@ -341,6 +339,8 @@ section {
   position: absolute;
   left: 0;
   top: 0;
+  bottom: 0;
+  right: 0;
   background-color: #141414;
   color: white;
   text-align: left;
@@ -374,5 +374,8 @@ section {
   text-decoration: none !important;
    }
 
+.desc.video{
+    padding: 0% !important;
+}
 
 /*# sourceMappingURL=app.css.map*/
