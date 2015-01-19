@@ -308,6 +308,8 @@ section {
     position: absolute;
     left: 0;
     top: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
     background-color: #141414;
     border: 1px solid white; }
