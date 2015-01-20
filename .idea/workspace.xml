@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b10e5ea-e58f-4af4-a14c-95bd1d823844" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/app.css" afterPath="$PROJECT_DIR$/stylesheets/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/app.js" afterPath="$PROJECT_DIR$/javascripts/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jj_prod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,6 +22,7 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="jj_prod" />
   </component>
@@ -27,7 +31,18 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="18" selection-start="5535" selection-end="5535" vertical-scroll-proportion="0.6134454" vertical-offset="2249" max-vertical-offset="3082">
+            <state line="47" column="343" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.5858343" vertical-offset="593" max-vertical-offset="3358">
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="292" column="36" selection-start="8285" selection-end="8285" vertical-scroll-proportion="0.0" vertical-offset="6212" max-vertical-offset="7084">
               <folding />
             </state>
           </provider>
@@ -36,7 +51,7 @@
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="372" column="26" selection-start="9001" selection-end="9001" vertical-scroll-proportion="-20.153847" vertical-offset="8032" max-vertical-offset="8993">
+            <state line="208" column="13" selection-start="4907" selection-end="4907" vertical-scroll-proportion="-23.23077" vertical-offset="4180" max-vertical-offset="9016">
               <folding />
             </state>
           </provider>
@@ -55,6 +70,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/javascripts/app.js" />
         <option value="$PROJECT_DIR$/stylesheets/app.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
@@ -90,7 +106,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -123,8 +138,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jj_prod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jj_prod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,6 +176,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2b10e5ea-e58f-4af4-a14c-95bd1d823844" name="Default" comment="" />
@@ -199,7 +246,9 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="32" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.0" vertical-offset="1334" max-vertical-offset="3450">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -210,17 +259,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="292" column="36" selection-start="8285" selection-end="8285" vertical-scroll-proportion="0.0" vertical-offset="6212" max-vertical-offset="7084">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="372" column="26" selection-start="9001" selection-end="9001" vertical-scroll-proportion="-20.153847" vertical-offset="8032" max-vertical-offset="8993">
+        <state line="208" column="13" selection-start="4907" selection-end="4907" vertical-scroll-proportion="-23.23077" vertical-offset="4180" max-vertical-offset="9016">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="18" selection-start="5535" selection-end="5535" vertical-scroll-proportion="0.6134454" vertical-offset="2249" max-vertical-offset="3082">
-          <folding />
+        <state line="47" column="343" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.5858343" vertical-offset="593" max-vertical-offset="3358">
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

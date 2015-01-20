@@ -286,6 +286,7 @@ $(document).ready(function() {
   });
   $('body').on('click', '.menu-item a', function(e) {
     var target;
+    e.stopPropagation();
     e.preventDefault();
     target = $($(this).attr('href'));
     return $('body,html').animate({
