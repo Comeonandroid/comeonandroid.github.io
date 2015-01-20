@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b10e5ea-e58f-4af4-a14c-95bd1d823844" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/app.css" afterPath="$PROJECT_DIR$/stylesheets/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/app.js" afterPath="$PROJECT_DIR$/javascripts/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jj_prod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="343" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.5858343" vertical-offset="593" max-vertical-offset="3358">
+            <state line="53" column="79" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.7515006" vertical-offset="593" max-vertical-offset="3404">
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -275,7 +272,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="343" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.5858343" vertical-offset="593" max-vertical-offset="3358">
+        <state line="53" column="79" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.7515006" vertical-offset="593" max-vertical-offset="3404">
           <folding>
             <element signature="n#style#0;n#iframe#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
