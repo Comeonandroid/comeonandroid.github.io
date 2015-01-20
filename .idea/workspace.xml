@@ -28,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="79" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.7515006" vertical-offset="593" max-vertical-offset="3404">
+            <state line="44" column="16" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.9447779" vertical-offset="225" max-vertical-offset="3404">
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -48,7 +48,7 @@
       <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="208" column="13" selection-start="4907" selection-end="4907" vertical-scroll-proportion="-23.23077" vertical-offset="4180" max-vertical-offset="9016">
+            <state line="116" column="13" selection-start="2679" selection-end="2680" vertical-scroll-proportion="-14.384615" vertical-offset="2294" max-vertical-offset="9016">
               <folding />
             </state>
           </provider>
@@ -265,14 +265,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="13" selection-start="4907" selection-end="4907" vertical-scroll-proportion="-23.23077" vertical-offset="4180" max-vertical-offset="9016">
+        <state line="116" column="13" selection-start="2679" selection-end="2680" vertical-scroll-proportion="-14.384615" vertical-offset="2294" max-vertical-offset="9016">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="79" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.7515006" vertical-offset="593" max-vertical-offset="3404">
+        <state line="44" column="16" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.9447779" vertical-offset="225" max-vertical-offset="3404">
           <folding>
             <element signature="n#style#0;n#iframe#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
