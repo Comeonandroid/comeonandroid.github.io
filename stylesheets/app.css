@@ -384,4 +384,7 @@ section {
     height: 100%;
 }
 
+@media (max-width: 680px) {
+    footer.fixed-container {
+        bottom: -20px !important; } }
 /*# sourceMappingURL=app.css.map*/

@@ -160,7 +160,7 @@ ScrollSpy = (function() {
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       section = _ref[_i];
       if (this.currentPosition.top >= this.sections[key].offset.top) {
-        if ((this.sections[key + 1] != null) && this.currentPosition.view <= this.sections[key + 1].offset.top) {
+        if ((this.sections[key + 1] != null) && (this.currentPosition.view+100) <= this.sections[key + 1].offset.top) {
           this.currentSection = this.sections[key];
         } else {
           this.currentSection = this.sections[key + 1];
