@@ -290,7 +290,7 @@ $(document).ready(function() {
     e.preventDefault();
     target = $($(this).attr('href'));
     return $('body,html').animate({
-      scrollTop: target.offset().top - (target.offset().top * 0.07)
+      scrollTop: target.offset().top - (target.offset().top * 0.03)
     }, 600);
   });
   return $('body').on('click', '.menu-item', function(e) {
