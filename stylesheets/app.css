@@ -250,8 +250,24 @@ footer ul.social {
       .right-menu .menu-item {
         display: none; } }
 
+@media (max-width: 1000px) {
+    .right-menu{
+        font-size: 80%;
+    }
+}
+@media (max-width: 800px) {
+    .right-menu{
+        font-size: 65%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fixed-container.active .right-menu {
+        margin-top: 8% !important; }
+}
+
 .fixed-container.active .right-menu {
-  margin-top: -1%; }
+  margin-top: 15%; }
   .fixed-container.active .right-menu .menu-item {
     margin-bottom: 12%; }
     .fixed-container.active .right-menu .menu-item a {
