@@ -275,7 +275,7 @@ footer ul.social {
 
 .work-container {
   position: relative;
-  width: 45%;
+  width: 52%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -297,7 +297,9 @@ footer ul.social {
       left: 50%; } }
 
 section {
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   position: relative; }
   section.work {
     padding-top: 8%;
