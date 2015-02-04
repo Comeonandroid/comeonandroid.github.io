@@ -37,7 +37,7 @@ body {
   transition: all 0.3s ease-out;
   position: fixed;
   width: 100%;
-  max-width: 1440px;
+  max-width: 2040px;
   min-width: 620px; }
   .fixed-container.active {
     -webkit-transform: translateX(-30%);
@@ -106,7 +106,7 @@ footer ul.social {
 .container {
   position: relative;
   width: 100%;
-  max-width: 1440px;
+  max-width: 2040px;
   min-width: 620px;
   margin: 0 auto; }
 
