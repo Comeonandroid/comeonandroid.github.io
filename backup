@@ -25,22 +25,34 @@
           <p>
             Alexander Yaguza and Alexander Lokhmatov are two young designers from the south. We create logos, websites, corporate identity and polygraphy. We are interested in working with small indie projects, as well as cooperating with large-scale objects.
           </p>
-          <p class="contact-us">Contact us, phone: +7-919-891-45-73,<br>e-mail: thegittes@gmail.com</p>
+          <p class="contact-us">Contact us, phone: +7-919-891-45-73,<br>e-mail: gittesdesign@gmail.com</p>
         </div>
           <div class="right-menu main_menu">
               <div data-scroll-target="movebitch_1" class="menu-item active"><a href="#movebitch_1">  Move B*tch
                   <div class="label">Branding, Editorial</div></a>
                   <div class="dot"></div>
               </div>
-              
+              <div data-scroll-target="labaklajan" class="menu-item"><a href="#labaklajan">  La Baklajan
+                  <div class="label">Branding</div></a>
+                  <div class="dot"></div>
+              </div>
               <div data-scroll-target="booze" class="menu-item"><a href="#booze">
                   Booze Penguin
                   <div class="label">Branding</div></a>
                   <div class="dot"></div>
               </div>
 
+              <div data-scroll-target="logos2014" class="menu-item"><a href="#logos2014">
+                  Logos 2014
+                  <div class="label">Branding</div></a>
+                  <div class="dot"></div>
+              </div>
 
-          
+              <div data-scroll-target="ex1917" class="menu-item"><a href="#ex1917">
+                  Exhibition 1917-1943
+                  <div class="label">Exhibition design, Concept</div></a>
+                  <div class="dot"></div>
+              </div>
 
               <div data-scroll-target="cat01" class="menu-item"><a href="#cat01">
                   Catalog of museums
@@ -59,7 +71,7 @@ position: absolute;" allowTransparency="true" class="facebook-like"></iframe>
           <li><a href="https://www.behance.net/gittes">Behance</a></li>
           <li><a href="http://instagram.com/gittesdesign">Intstagram</a></li>
           <li><a href="https://www.facebook.com/gittesdesign">Facebook</a></li>
-          <li><a href="mailto:thegittes@gmail.com">Mail</a></li>
+          <li><a href="mailto:gittesdesign@gmail.com">Mail</a></li>
           <li  class="lang"><a href="#">Rus</a></li>
         </ul>
       </footer>
@@ -85,6 +97,7 @@ like spoke card, promo poster, video, fanzine and t-shirt.</div>
               
               <div class="push-slide"><img src="img/MB7.jpg"></div>
               <div class="push-slide"><img src="img/MB6.jpg"></div>
+              <div class="push-slide"><img src="img/MB5.jpg"></div>
               <div class="push-slide"><img src="img/MB4.jpg"></div>
               <div class="push-slide"><img src="img/MB3.jpg"></div>
               <div class="push-slide"><img src="img/MB2.jpg"></div> 
@@ -96,16 +109,39 @@ like spoke card, promo poster, video, fanzine and t-shirt.</div>
           </div>
         </section>
 
-       
+        <section id="labaklajan" class="work">
+          <div class="work-container">
+            <div class="push-slider">
+              <div class="push-slide desc-slide"><img src="img/lb5.jpg" class="hide">
+                <div class="desc">
+                  <div class="title">La Baklajan​: healthy food</div>
+                  <div class="body">Lettering stamp logo, menu and other stuff
+                                    for the La Baklajan healthy food.</div>
+                  <div class="with">
+                    <div class="strong"></div> 
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="push-slide"><img src="img/lb4.jpg"></div>
+              <div class="push-slide"><img src="img/lb3.jpg"></div>
+              <div class="push-slide"><img src="img/lb5.jpg"></div>
+              <div class="push-slide"><img src="img/lb2.jpg"></div>
+
+            </div>
+            <a href="https://www.behance.net/gallery/22295253/La-Baklajan" class="button">View full project on Behance</a>
+          </div>
+        </section>
 
         <section id="booze" class="work">
           <div class="work-container">
             <div class="push-slider">
                 <div class="push-slide desc-slide"><img src="img/booze_0.jpg" class="hide">
                     <div class="desc">
-                        <div class="title">Booze Penguin</div>
-                        <div class="body">Logotype, business card and some stuff
-for cypersport tv «Booze penguin». <br> Special thanks to Goga Djalagania for help in the project.<br> See more by clicking on the link below.  </div>
+                        <div class="title">La Baklajan​: healthy food</div>
+                        <div class="body">Lettering stamp logo, menu and other stuff
+                            for the La Baklajan healthy food.</div>
                         <div class="with">
                             <div class="strong"></div>
 
@@ -122,6 +158,63 @@ for cypersport tv «Booze penguin». <br> Special thanks to Goga Djalagania for 
           </div>
         </section>
 
+
+        <section id="logos2014" class="work">
+          <div class="work-container">
+            <div class="push-slider">
+              <div class="push-slide desc-slide"><img src="img/lo1.jpg" class="hide">
+                <div class="desc">
+                  <div class="title">Logos 2014</div>
+                  <div class="body">The whole set of 24 logos in 2014 you can see by clicking on the link below.</div>
+                  <div class="with">
+                    <div class="strong"></div> 
+
+                  </div>
+                </div>
+              </div>
+              
+              <div class="push-slide"><img src="img/lo9.jpg"></div>
+              <div class="push-slide"><img src="img/lo8.jpg"></div>
+              <div class="push-slide"><img src="img/lo7.jpg"></div>
+              <div class="push-slide"><img src="img/lo2.jpg"></div>
+              <div class="push-slide"><img src="img/lo5.jpg"></div>
+              <div class="push-slide"><img src="img/lo3.jpg"></div>
+              <div class="push-slide"><img src="img/lo1.jpg"></div>
+
+            </div>
+            <a href="https://www.behance.net/gallery/19932289/24-Logos-201314" class="button">View full project on Behance</a>
+          </div>
+        </section>
+
+
+        <section id="ex1917" class="work">
+          <div class="work-container">
+            <div class="push-slider">
+              <div class="push-slide desc-slide"><img src="img/ex1.jpg" class="hide">
+                <div class="desc">
+                  <div class="title">Exhibition 1917-1943</div>
+                  <div class="body">The concept of the exhibition space “1917-1943” of the museum in Belaya Kalitva.</div>
+                  <div class="with">
+                    <div class="strong">Collaboration with:</div>Irina Posmereka – vizualization
+                  </div>
+                </div>
+              </div>
+              
+              <div class="push-slide"><img src="img/ex9.jpg"></div>
+              <div class="push-slide"><img src="img/ex8.jpg"></div>
+              <div class="push-slide"><img src="img/ex7.jpg"></div>
+              <div class="push-slide"><img src="img/ex6.jpg"></div>
+              <div class="push-slide"><img src="img/ex5.jpg"></div>
+              <div class="push-slide"><img src="img/ex4.jpg"></div>
+              <div class="push-slide"><img src="img/ex3.jpg"></div>
+              <div class="push-slide"><img src="img/ex2.jpg"></div>
+              <div class="push-slide"><img src="img/ex1.jpg"></div>
+
+            </div>
+           
+
+          </div>
+        </section>
         
 
 
@@ -139,7 +232,7 @@ for cypersport tv «Booze penguin». <br> Special thanks to Goga Djalagania for 
                 </div>
               </div>
               
-              <div class="push-slide"><img src="img/cat6.jpg"></div>
+
               <div class="push-slide"><img src="img/cat5.jpg"></div>
               <div class="push-slide"><img src="img/cat4.jpg"></div>
               <div class="push-slide"><img src="img/cat3.jpg"></div>
@@ -147,7 +240,7 @@ for cypersport tv «Booze penguin». <br> Special thanks to Goga Djalagania for 
               <div class="push-slide"><img src="img/cat1.jpg"></div>
 
             </div>
-            <a href="https://www.behance.net/gallery/19917349/Catalog-of-museums-theaters-and-exhibition-spaces" class="button" >View full project on Behance</a>
+            <a href="https://www.behance.net/gallery/19917349/Catalog-of-museums-theaters-and-exhibition-spaces" class="button">View full project on Behance</a>
           </div>
         </section>
 
