@@ -37,7 +37,6 @@ body {
   transition: all 0.3s ease-out;
   position: fixed;
   width: 100%;
-  max-width: 2040px;
   min-width: 620px; }
   .fixed-container.active {
     -webkit-transform: translateX(-30%);
@@ -124,7 +123,9 @@ footer ul.social {
   position: relative;
   overflow: hidden;
   width: 30px;
-  height: 30px; }
+  height: 30px;
+  right: 2%;
+}
   .menu-icon-cont.active .icon-menu {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -405,4 +406,8 @@ section {
 @media (max-width: 680px) {
     footer.fixed-container {
         bottom: -36px !important; } }
+
+@media (max-width: 1000px) {
+    .main-desc {
+        font-size: 20% } }
 /*# sourceMappingURL=app.css.map*/
