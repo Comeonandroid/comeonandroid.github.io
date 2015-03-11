@@ -280,10 +280,13 @@ $(document).ready(function() {
       return prepare_slider(this);
     }
   });
-  $('section.work').scrollSpy().addAction('ALL', function(elem) {
-    $(".menu-item").removeClass('active');
-    return $(".menu-item[data-scroll-target=\"" + (elem.attr('id')) + "\"]").addClass('active');
-  });
+  setTimeout(function(){
+      $('section.work').scrollSpy().addAction('ALL', function(elem) {
+          $(".menu-item").removeClass('active');
+          return $(".menu-item[data-scroll-target=\"" + (elem.attr('id')) + "\"]").addClass('active');
+      });
+  },200)
+
   $('body').on('click', '.menu-item a', function(e) {
     var target;
     e.stopPropagation();
