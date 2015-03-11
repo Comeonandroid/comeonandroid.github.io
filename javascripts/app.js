@@ -285,7 +285,7 @@ $(document).ready(function() {
           $(".menu-item").removeClass('active');
           return $(".menu-item[data-scroll-target=\"" + (elem.attr('id')) + "\"]").addClass('active');
       });
-  },200)
+  },300)
 
   $('body').on('click', '.menu-item a', function(e) {
     var target;
