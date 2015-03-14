@@ -280,12 +280,15 @@ $(document).ready(function() {
       return prepare_slider(this);
     }
   });
-  setTimeout(function(){
+  $(window).scroll(function(){
       $('section.work').scrollSpy().addAction('ALL', function(elem) {
           $(".menu-item").removeClass('active');
           return $(".menu-item[data-scroll-target=\"" + (elem.attr('id')) + "\"]").addClass('active');
       });
-  },300)
+
+    });
+
+
 
   $('body').on('click', '.menu-item a', function(e) {
     var target;
